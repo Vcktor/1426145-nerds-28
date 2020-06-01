@@ -29,7 +29,7 @@
                     <legend>Сетка</legend>
                     <ul>
                         <li>
-                            <input type="radio" name="net" value="adaptive" id="filter-adaptive">
+                            <input type="radio" name="net" value="adaptive" id="filter-adaptive" checked>
                             <label for="filter-adaptive"> Адаптивная </label>
                         </li>
                         <li>
@@ -50,7 +50,7 @@
                             <label for="filter-slider">Слайдер</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="block of advantages" id="filter-block-of-advantages" checked>
+                            <input type="checkbox" name="block of advantages" id="filter-block-of-advantages">
                             <label for="filter-block-of-advantages">Блок преимуществ</label>
                         </li>
                         <li>
@@ -58,11 +58,11 @@
                             <label for="filter-new">Новости</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="gallery" id="filter-gallery" checked>
+                            <input type="checkbox" name="gallery" id="filter-gallery">
                             <label for="filter-gallery">Галерея</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="basket" id="filter-basket" checked>
+                            <input type="checkbox" name="basket" id="filter-basket">
                             <label for="filter-basket">Корзина</label>
                         </li>
                     </ul>
@@ -106,15 +106,15 @@
             <h3>Напишите нам</h3>
             <form action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                    <label for="appointment-name">Ваше имя</label>
-                    <input id="appointment-name" type="text" name="name" placeholder="Виктор">
+                    <label for="appointment-name">Ваше имя:</label>
+                    <input id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
                 </p>
                 <p>
-                    <label for="appointment-e-mail">Ваш e-mail</label>
-                    <input id="appointment-e-mail" type="tel" name="e-mail" placeholder="victor@mail.ru">
+                    <label for="appointment-e-mail">Ваш e-mail:</label>
+                    <input id="appointment-e-mail" type="email" name="e-mail" required placeholder="email@example.com">
                 </p>
                 <p>
-                    <label for="appointment-text">Текст письма</label>
+                    <label for="appointment-text">Текст письма:</label>
                     <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
                 </p>
                 <button type="submit">Отправить</button>
@@ -124,6 +124,17 @@
     <footer>
         <h2>Давайте дружить это выгодно</h2>
         <p>Скидка 10% для друзей из социальных сетей</p>
+        <ul>
+            <li class="visually-hidden">
+                <a href=""> Вконтакте </a>
+            </li>
+            <li class="visually-hidden">
+                <a href=""> Фейсбук </a>
+            </li>
+            <li class="visually-hidden">
+                <a href=""> Инстограм </a>
+            </li>
+        </ul>
     </footer>
 </body>
 
