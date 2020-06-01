@@ -24,9 +24,9 @@
         </nav>
     </header>
     <main>
-        <h1>Нердс</h1>
+        <h1 class="visually-hidden"> Нердс</h1>
         <section>
-            <h2>Преимущества</h2>
+            <h2 class="visually-hidden"> Преимущества </h2>
             <ul>
                 <li>
                     <img src="img/Veb-sites.png" width="150" height="150" alt="Веб-сайты">
@@ -55,15 +55,15 @@
             <h3>Напишите нам</h3>
             <form action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                    <label for="appointment-name">Ваше имя</label>
-                    <input id="appointment-name" type="text" name="name" placeholder="Виктор">
+                    <label for="appointment-name">Ваше имя:</label>
+                    <input id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
                 </p>
                 <p>
-                    <label for="appointment-e-mail">Ваш e-mail</label>
-                    <input id="appointment-e-mail" type="tel" name="e-mail" placeholder="victor@mail.ru">
+                    <label for="appointment-e-mail">Ваш e-mail:</label>
+                    <input id="appointment-e-mail" type="email" name="e-mail" required placeholder="email@exammple.com">
                 </p>
                 <p>
-                    <label for="appointment-text">Текст письма</label>
+                    <label for="appointment-text">Текст письма:</label>
                     <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
                 </p>
                 <button type="submit">Отправить</button>
@@ -73,6 +73,17 @@
     <footer>
         <h2>Давайте дружить это выгодно</h2>
         <p>Скидка 10% для друзей из социальных сетей</p>
+        <ul>
+            <li class="visually-hidden">
+                <a href=""> Вконтакте </a>
+            </li>
+            <li class="visually-hidden">
+                <a href=""> Фейсбук </a>
+            </li>
+            <li class="visually-hidden">
+                <a href=""> Инстограм </a>
+            </li>
+        </ul>
     </footer>
 </body>
 
