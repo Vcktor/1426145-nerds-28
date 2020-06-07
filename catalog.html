@@ -4,9 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title> Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,
+    900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page body inner page">
     <header>
         <nav>
             <a href="index.html">
@@ -22,12 +26,12 @@
         </nav>
     </header>
     <main>
-        <h1>Магазин готовых шаблонов</h1>
-        <section>
+        <h1 class="shop">Магазин готовых шаблонов</h1>
+        <section class="filter">
             <form action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
-                    <legend>Сетка</legend>
-                    <ul>
+                    <legend class="net">Сетка</legend>
+                    <ul class="radio">
                         <li>
                             <input type="radio" name="net" value="adaptive" id="filter-adaptive" checked>
                             <label for="filter-adaptive"> Адаптивная </label>
@@ -43,8 +47,8 @@
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Особености</legend>
-                    <ul>
+                    <legend class="features">Особености</legend>
+                    <ul class="checkbox">
                         <li>
                             <input type="checkbox" name="slider" id="filter-slider" checked>
                             <label for="filter-slider">Слайдер</label>
@@ -67,10 +71,10 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit">Показать</button>
+                <button class="but" type="submit">Показать</button>
             </form>
         </section>
-        <ul>
+        <ul class="advertising">
             <li>
                 <a href="">
                     <img src="img/sedona.png" width="150" height="100" alt="седона">
@@ -102,7 +106,7 @@
                 </a>
             </li>
         </ul>
-        <section>
+        <section class="second-feedback">
             <h3>Напишите нам</h3>
             <form action="https://echo.htmlacademy.ru" method="post">
                 <p>
@@ -121,19 +125,29 @@
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="cecond-footer">
         <h2>Давайте дружить это выгодно</h2>
         <p>Скидка 10% для друзей из социальных сетей</p>
-        <ul>
-            <li class="visually-hidden">
-                <a href=""> Вконтакте </a>
+        <ul class="cecond-cocial">
+            <li>
+                <a href="">
+                    <img src="img/vkontak.svg" width="150" height="100" alt="Вконтакте">
+                </a>
             </li>
-            <li class="visually-hidden">
-                <a href=""> Фейсбук </a>
+            <span class="visually-hidden"> Вконтакте</span>
+            <li>
+                <a href="">
+                    <img src="img/Facebook.svg" width="150" height="100" alt="Фейсбук">
+                </a>
             </li>
-            <li class="visually-hidden">
-                <a href=""> Инстограм </a>
+            <span class="visually-hidden"> Фейсбук</span>
+            <li>
+
+                <a href="">
+                    <img src="img/Instogram.svg" width="150" height="100" alt="Инстограм">
+                </a>
             </li>
+            <span class="visually-hidden"> Инстограм</span>
         </ul>
     </footer>
 </body>
