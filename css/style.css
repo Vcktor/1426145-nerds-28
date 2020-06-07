@@ -1,0 +1,214 @@
+                               :root {
+                                  --basic-black: #000000;
+                                  --basic-white: #ffffff;
+                                  --basic-extra-dark: #242424;
+                                  --basic-pink: #fb565a;
+                              }
+                              
+                              @font-face {
+                                  font-family: 'Roboto';
+                                  src: url('Roboto-webfont.woff2') format('woff2'), url('Roboto-webfont.woff') format('woff');
+                                  font-style: normal;
+                                  font-weight: normal;
+                              }
+                              
+                              body {
+                                  min-width: width 960px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                  font-family: "Roboto", "sans-serif";
+                                  font-size: 16px;
+                                  line-height: 30px;
+                                  font-weight: 500px;
+                                  color: var(--basic-black);
+                                  text-transform: uppercase;
+                                  background-color: var(--basic-white);
+                                  background-image: url("img/Veb-sites.png");
+                                  background-image: url("img/Application.png");
+                                  background-image: url("img/Presentation.png");
+                                  background-position: center;
+                                  background-repeat: no-repeat;
+                              }
+                              
+                              a {
+                                  text-decoration: none;
+                              }
+                              
+                              img {
+                                  max-width: 100%;
+                                  height: auto;
+                              }
+                              
+                              .main-navigation {
+                                  font-size: 16px;
+                                  line-height: 30px;
+                                  color: var(--basic-black);
+                                  background-color: transparent;
+                              }
+                              
+                              .main-navigation-wrapper {
+                                  background-color: var (--basic-white);
+                              }
+                              
+                              ul {
+                                  list-style: none;
+                              }
+                              
+                              a :not([href]) {
+                                  background-color: (var(--basic-black));
+                              }
+                              
+                              a {
+                                  color: var(--basic-black);
+                              }
+                              
+                              a :hover,
+                              a :focus {
+                                  background-color: var (var(--basic-extra-dark))
+                              }
+                              
+                              .feature {
+                                  align-items: center;
+                                  font-size: 34px;
+                                  line-height: 30px;
+                              }
+                              
+                              .write {
+                                  font-size: 16px;
+                                  line-height: 24px;
+                              }
+                              
+                              .button {
+                                  font: inherit;
+                                  text-align: center;
+                                  color: var (var(--basic-white));
+                                  vertical-align: middle;
+                                  background-color: var (--basic-pink);
+                                  border: none;
+                              }
+                              
+                              .button:hover,
+                              .button:focus,
+                              .button :active {
+                                  border-radius: 3px;
+                              }
+                              
+                              input {
+                                  font: inherit;
+                                  background-color: transparent;
+                              }
+                              
+                              .main-footer {
+                                  color: var (--basic-black);
+                                  background-color: var (--basic-white);
+                                  background-image: url("img/vkontak.svg");
+                                  background-image: url("img/Facebook.svg");
+                                  background-image: url("img/Instogram.svg");
+                              }
+                              
+                              .main-footer a {
+                                  color: var (--basic-white);
+                                  text-decoration: indianred;
+                              }
+                              
+                              .main-footer a :hover,
+                              .main-footer a :focus {
+                                  text-decoration: none;
+                              }
+                              
+                              .cocial {
+                                  text-align: right;
+                                  list-style: none;
+                              }
+                              /*catalog*/
+                              
+                              .inner-page header {
+                                  background-color: var(--basic-white);
+                              }
+                              
+                              .inner-page {
+                                  color: var (--basic-black);
+                                  background-color: var(--basic-white);
+                                  background-image: url("index.html");
+                                  background-repeat: repeat;
+                              }
+                              
+                              .shop {
+                                  font-size: 55px;
+                                  font-weight: 500px;
+                                  line-height: 55px;
+                              }
+                              
+                              .net {
+                                  color: var (var(--basic-black));
+                                  background-color: var (var(--basic-white));
+                                  font-size: 18px;
+                                  line-height: 30px;
+                                  font-weight: bold;
+                                  font-style: normal;
+                              }
+                              
+                              .radio :hover+label,
+                              .radio :focus+label {
+                                  color: var(--basic-black);
+                                  background-color: var(--basic-white);
+                                  list-style: none;
+                                  font-size: 16px;
+                                  line-height: 19px;
+                                  font-weight: normal;
+                                  font-style: normal;
+                              }
+                              
+                              .checkbox:hover+label .checkbox:focus+label {
+                                  color: var(--basic-black);
+                                  background-color: var (--basic-white);
+                                  font-size: 16px;
+                                  list-style: none;
+                                  line-height: 19px;
+                                  font-weight: normal;
+                                  font-style: normal;
+                              }
+                              
+                              .but {
+                                  color: var(--basic-white);
+                                  background-color: var (--basic-white);
+                                  border-radius: 3 px;
+                              }
+                              
+                              .advertising a:hover,
+                              .advertising a:focus {
+                                  background-image: url ("img/sedona.png");
+                                  background-image: url ("img/Barbershop.png");
+                                  background-image: url ("img/mobile-application.png");
+                                  background-image: url ("img/Baskets.png");
+                                  background-image: url ("img/kvas.png");
+                                  background-image: url ("img/study.png");
+                              }
+                              
+                              .second-feeback {
+                                  font: inherit;
+                                  background-color: transparent;
+                              }
+                              
+                              .cecond-footer {
+                                  color: var (--basic-black);
+                                  background-color: var (--basic-white);
+                                  background-image: url("img/vkontak.svg");
+                                  background-image: url("img/Facebook.svg");
+                                  background-image: url("img/Instogram.svg");
+                              }
+                              
+                              .cecond-footer a {
+                                  color: var (--basic-white);
+                                  text-decoration: indianred;
+                              }
+                              
+                              .second-footer a :hover,
+                              .second-footer a :focus {
+                                  text-decoration: none;
+                              }
+                              
+                              .cecond-cocial {
+                                  text-align: right;
+                                  list-style: none;
+                              }
