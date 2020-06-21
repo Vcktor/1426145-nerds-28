@@ -4,97 +4,94 @@
 <head>
     <meta charset="utf-8">
     <title> Нёрдс</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,
-    900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap">
+    <link href="unicod/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="main-navigation">
-            <a>
-                <img src="img/nerds-logo.png" width="150" height="100" alt="nerds">
+        <nav>
+            <a class="main-navigation">
+                <img src="img/nerds-logo.png" width="160" height="66" alt="nerds">
             </a>
-            <div class="main-navigation-wrapper">
-                <ul>
-                    <li><a href=""> студия </a></li>
-                    <li><a href=""> клиенты </a></li>
-                    <li><a href="catalog.html"> каталог </a></li>
-                    <li><a href=""> контакты </a></li>
-                </ul>
-                <a href="">Корзина
+            <ul class="links">
+                <li><a class="study" href=""> студия </a></li>
+                <li><a class="client" href=""> клиенты </a></li>
+                <li><a class="catalog" href="catalog.html"> каталог </a></li>
+                <li><a class="contact" href=""> контакты </a></li>
+            </ul>
+            <a class="bin" href="">Корзина
              </a>
-            </div>
+
         </nav>
     </header>
     <main>
         <h1 class="visually-hidden"> Нердс</h1>
         <section class="feature">
             <h2 class="visually-hidden"> Преимущества </h2>
-            <ul>
+            <ul class="services">
                 <li>
-                    <img src="img/Veb-sites.png" width="150" height="150" alt="Веб-сайты">
-                    <h3>Веб-сайты</h3>
-                    <p class="write">Мир никогда не будет прежним после того как вы увидите наш сайт</p>
-                    <a href=""> Заказать 
+                    <img src="img/Veb-sites.png" width="300" height="146" alt="Веб-сайты">
+                    <h3 class="veb"> Веб-сайты</h3>
+                    <p class="world-future">Мир никогда не будет прежним <br>после того как вы увидите наш сайт</p>
+                    <a class="links-one" href=""> Заказать 
                     </a>
                 </li>
                 <li>
-                    <img src="img/Application.png" width="150" height="100" alt="Приложения">
-                    <h2>Приложения</h2>
-                    <p class="write">Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <a href=""> Заказать 
+                    <img src="img/Application.png" width="300" height="146" alt="Приложения">
+                    <h2 class="Application">Приложения</h2>
+                    <p class="appplay">Покорите топ-10 приложений в<br> AppStore и Google Play</p>
+                    <a class="links-two" href=""> Заказать 
                     </a>
                 </li>
                 <li>
-                    <img src="img/Presentation.png" width="150" height="100" alt="Презинтации">
-                    <h2>Презентации</h2>
-                    <p class="write">Вы даже не подозреваете на сколько вы изумительны!</p>
-                    <a href=""> Заказать 
+                    <img src="img/Presentation.png" width="300" height="146" alt="Презинтации">
+                    <h2 class="presentation">Презентации</h2>
+                    <p class="amazingli">Вы даже не подозреваете,<br> на сколько вы изумительны!</p>
+                    <a class="links-three" href=""> Заказать 
                     </a>
                 </li>
             </ul>
         </section>
         <section clas="feedback">
-            <h3>Напишите нам</h3>
+            <h3 class="write">Напишите нам</h3>
             <form action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                    <label for="appointment-name">Ваше имя:</label>
-                    <input id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
+                    <label class="name" for="appointment-name">Ваше имя:</label>
+                    <input class="text" id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
                 </p>
                 <p>
-                    <label for="appointment-e-mail">Ваш e-mail:</label>
-                    <input id="appointment-e-mail" type="email" name="e-mail" required placeholder="email@exammple.com">
+                    <label class="email" for="appointment-e-mail">Ваш e-mail:</label>
+                    <input class="text-email" id="appointment-e-mail" type="email" name="e-mail" required placeholder="email@exammple.com">
                 </p>
                 <p>
-                    <label for="appointment-text">Текст письма:</label>
-                    <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+                    <label class="letter" for="appointment-text">Текст письма:</label>
+                    <input class="text-letter" id="appointment-text" type="text" name="text" placeholder="В свободной форме">
                 </p>
                 <button class="button" type="submit">Отправить</button>
             </form>
         </section>
     </main>
     <footer class="main-footer">
-        <h2>Давайте дружить это выгодно</h2>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+        <h2 class="friend"> Давайте дружить, это выгодно!</h2>
+        <p class="discounts"> Скидка 10% для друзей из социальных сетей.</p>
         <ul class="cocial">
             <li>
-                <a href="">
-                    <img src="img/vkontak.svg" width="150" height="100" alt="Вконтакте">
+                <a class="vk" href="">
+                    <img src="img/vkontak.svg" width="26" height="15" alt="Вконтакте">
                 </a>
             </li>
             <span class="visually-hidden"> Вконтакте</span>
             <li>
-                <a href="">
-                    <img src="img/Facebook.svg" width="150" height="100" alt="Фейсбук">
+                <a class="fb" href="">
+                    <img src="img/Facebook.svg" width="10" height="20" alt="Фейсбук">
                 </a>
             </li>
             <span class="visually-hidden"> Фейсбук</span>
             <li>
-
-                <a href="">
-                    <img src="img/Instogram.svg" width="150" height="100" alt="Инстограм">
+                <a class="inst" href="">
+                    <img src="img/Instogram.svg" width="12" height="12" alt="Инстограм">
                 </a>
             </li>
             <span class="visually-hidden"> Инстограм</span>
