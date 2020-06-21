@@ -4,33 +4,32 @@
 <head>
     <meta charset="utf-8">
     <title> Нёрдс</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,
-    900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap">
     <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page body inner page">
+<body>
     <header>
         <nav>
-            <a href="index.html">
-                <img src="img/nerds-logo.png" width="150" height="100" alt="Нердс">
+            <a class="main-navigation-catalog" href="index.html">
+                <img src="img/nerds-logo.png" width="160" height="66" alt="Нердс">
             </a>
-            <ul>
-                <li><a href=""> студия </a></li>
-                <li><a href=""> клиенты </a></li>
-                <li><a href="catalog.html"> каталог </a></li>
-                <li><a href=""> контакты </a></li>
+            <ul class="links-catalog">
+                <li><a class="study-catalog" href=""> студия </a></li>
+                <li><a class="client-catalog" href=""> клиенты </a></li>
+                <li><a class="catalog-catalog" href="catalog.html"> каталог </a></li>
+                <li><a class="contact-catalog" href=""> контакты </a></li>
             </ul>
-            <a href="">Корзина</a>
+            <a class="bin-catalog" href="">Корзина</a>
         </nav>
     </header>
     <main>
         <h1 class="shop">Магазин готовых шаблонов</h1>
-        <section class="filter">
+        <section>
             <form action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
-                    <legend class="net">Сетка</legend>
+                    <legend>Сетка</legend>
                     <ul class="radio">
                         <li>
                             <input type="radio" name="net" value="adaptive" id="filter-adaptive" checked>
@@ -47,7 +46,7 @@
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend class="features">Особености</legend>
+                    <legend>Особености</legend>
                     <ul class="checkbox">
                         <li>
                             <input type="checkbox" name="slider" id="filter-slider" checked>
@@ -77,74 +76,74 @@
         <ul class="advertising">
             <li>
                 <a href="">
-                    <img src="img/sedona.png" width="150" height="100" alt="седона">
+                    <img src="img/sedona.png" width="360" height="576" alt="седона">
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="img/Barbershop.png" width="150" height="100" alt="Барбершоп">
+                    <img src="img/Barbershop.png" width="364" height="582" alt="Барбершоп">
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="img/mobile-application.png" width="150" height="100" alt="приложение">
+                    <img src="img/mobile-application.png" width="358" height="676" alt="приложение">
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="img/Baskets.png" width="150" height="100" alt="вязаные корзинки">
+                    <img src="img/Baskets.png" width="362" height="580" alt="вязаные корзинки">
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="img/kvas.png" width="150" height="100" alt="Реклама кваса">
+                    <img src="img/kvas.png" width="362" height="580" alt="Реклама кваса">
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="img/study.png" width="150" height="100" alt="Учеба">
+                    <img src="img/study.png" width="364" height="582" alt="Учеба">
                 </a>
             </li>
         </ul>
         <section class="second-feedback">
-            <h3>Напишите нам</h3>
+            <h3 class="write-catalog">Напишите нам</h3>
             <form action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                    <label for="appointment-name">Ваше имя:</label>
-                    <input id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
+                    <label class="name-catalog" for="appointment-name">Ваше имя:</label>
+                    <input class="text-catalog" id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
                 </p>
                 <p>
-                    <label for="appointment-e-mail">Ваш e-mail:</label>
-                    <input id="appointment-e-mail" type="email" name="e-mail" required placeholder="email@example.com">
+                    <label class="email-catalog" for="appointment-e-mail">Ваш e-mail:</label>
+                    <input class="text-email-catalog" id="appointment-e-mail" type="email" name="e-mail" required placeholder="email@example.com">
                 </p>
                 <p>
-                    <label for="appointment-text">Текст письма:</label>
-                    <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+                    <label class="letter-catalog" for="appointment-text"> Текст письма:</label>
+                    <input class="text-letter-catalog" id="appointment-text" type="text" name="text" placeholder="В свободной форме">
                 </p>
-                <button type="submit">Отправить</button>
+                <button class="button-catalog" type="submit">Отправить</button>
             </form>
         </section>
     </main>
-    <footer class="cecond-footer">
-        <h2>Давайте дружить это выгодно</h2>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-        <ul class="cecond-cocial">
+    <footer>
+        <h2 class="friend-catalog">Давайте дружить это выгодно</h2>
+        <p class="discounts-catalog">Скидка 10% для друзей из социальных сетей</p>
+        <ul class="cocial-catalog">
             <li>
-                <a href="">
-                    <img src="img/vkontak.svg" width="150" height="100" alt="Вконтакте">
+                <a class="vkon" href="">
+                    <img src="img/vkontak.svg" width="26" height="15" alt="Вконтакте">
                 </a>
             </li>
             <span class="visually-hidden"> Вконтакте</span>
             <li>
-                <a href="">
-                    <img src="img/Facebook.svg" width="150" height="100" alt="Фейсбук">
+                <a class="facebook" href="">
+                    <img src="img/Facebook.svg" width="10" height="20" alt="Фейсбук">
                 </a>
             </li>
             <span class="visually-hidden"> Фейсбук</span>
             <li>
 
-                <a href="">
-                    <img src="img/Instogram.svg" width="150" height="100" alt="Инстограм">
+                <a class="instogram" href="">
+                    <img src="img/Instogram.svg" width="12" height="12" alt="Инстограм">
                 </a>
             </li>
             <span class="visually-hidden"> Инстограм</span>
