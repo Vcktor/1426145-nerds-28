@@ -5,32 +5,32 @@
     <meta charset="utf-8">
     <title> Нёрдс</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <a class="main-navigation-catalog" href="index.html">
+            <a class="main-navigation" href="index.html">
                 <img src="img/nerds-logo.png" width="160" height="66" alt="Нердс">
             </a>
-            <ul class="links-catalog">
-                <li><a class="study-catalog" href=""> студия </a></li>
-                <li><a class="client-catalog" href=""> клиенты </a></li>
-                <li><a class="catalog-catalog" href="catalog.html"> каталог </a></li>
-                <li><a class="contact-catalog" href=""> контакты </a></li>
+            <ul class="list-items">
+                <li><a class="study-item" href=""> студия </a></li>
+                <li><a class="client-item" href=""> клиенты </a></li>
+                <li><a class="catalog-item" href="catalog.html"> каталог </a></li>
+                <li><a class="contact-item" href=""> контакты </a></li>
             </ul>
-            <a class="bin-catalog" href="">Корзина</a>
+            <a class="bin-link" href="">Корзина</a>
         </nav>
     </header>
     <main>
-        <h1 class="shop">Магазин готовых шаблонов</h1>
+        <h1 class="shop-caption">Магазин готовых шаблонов</h1>
         <section>
             <form action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
                     <legend>Сетка</legend>
-                    <ul class="radio">
+                    <ul class="radio-list">
                         <li>
                             <input type="radio" name="net" value="adaptive" id="filter-adaptive" checked>
                             <label for="filter-adaptive"> Адаптивная </label>
@@ -47,7 +47,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Особености</legend>
-                    <ul class="checkbox">
+                    <ul class="checkbox-list">
                         <li>
                             <input type="checkbox" name="slider" id="filter-slider" checked>
                             <label for="filter-slider">Слайдер</label>
@@ -70,7 +70,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button class="but" type="submit">Показать</button>
+                <button class="button" type="submit">Показать</button>
             </form>
         </section>
         <ul class="advertising">
@@ -105,45 +105,45 @@
                 </a>
             </li>
         </ul>
-        <section class="second-feedback">
-            <h3 class="write-catalog">Напишите нам</h3>
+        <section class="feedback">
+            <h3 class="write">Напишите нам</h3>
             <form action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                    <label class="name-catalog" for="appointment-name">Ваше имя:</label>
-                    <input class="text-catalog" id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
+                    <label class="name" for="appointment-name">Ваше имя:</label>
+                    <input class="text" id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
                 </p>
                 <p>
-                    <label class="email-catalog" for="appointment-e-mail">Ваш e-mail:</label>
-                    <input class="text-email-catalog" id="appointment-e-mail" type="email" name="e-mail" required placeholder="email@example.com">
+                    <label class="email" for="appointment-e-mail">Ваш e-mail:</label>
+                    <input class="text-email" id="appointment-e-mail" type="email" name="e-mail" required placeholder="email@example.com">
                 </p>
                 <p>
-                    <label class="letter-catalog" for="appointment-text"> Текст письма:</label>
-                    <input class="text-letter-catalog" id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+                    <label class="letter" for="appointment-text"> Текст письма:</label>
+                    <input class="text-letter" id="appointment-text" type="text" name="text" placeholder="В свободной форме">
                 </p>
-                <button class="button-catalog" type="submit">Отправить</button>
+                <button class="button" type="submit">Отправить</button>
             </form>
         </section>
     </main>
     <footer>
-        <h2 class="friend-catalog">Давайте дружить это выгодно</h2>
-        <p class="discounts-catalog">Скидка 10% для друзей из социальных сетей</p>
-        <ul class="cocial-catalog">
+        <h2 class="friend-caption">Давайте дружить это выгодно</h2>
+        <p class="discounts-text">Скидка 10% для друзей из социальных сетей</p>
+        <ul class="socials">
             <li>
-                <a class="vkon" href="">
+                <a class="socials-icon" href="">
                     <img src="img/vkontak.svg" width="26" height="15" alt="Вконтакте">
                 </a>
             </li>
             <span class="visually-hidden"> Вконтакте</span>
             <li>
-                <a class="facebook" href="">
-                    <img src="img/Facebook.svg" width="10" height="20" alt="Фейсбук">
+                <a class="socials-icon" href="">
+                    <img src="img/Facebook.svg" width="12" height="22" alt="Фейсбук">
                 </a>
             </li>
             <span class="visually-hidden"> Фейсбук</span>
             <li>
 
-                <a class="instogram" href="">
-                    <img src="img/Instogram.svg" width="12" height="12" alt="Инстограм">
+                <a class="socials-icon" href="">
+                    <img src="img/Instogram.svg" width="20" height="20" alt="Инстограм">
                 </a>
             </li>
             <span class="visually-hidden"> Инстограм</span>
