@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -9,93 +9,104 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <a class="main-navigation">
+<body class="page-body">
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-navigation-logo">
                 <img src="img/nerds-logo.png" width="160" height="66" alt="nerds">
             </a>
-            <ul class="list-items">
-                <li><a class="study-item" href=""> студия </a></li>
-                <li><a class="client-item" href=""> клиенты </a></li>
-                <li><a class="catalog-item" href="catalog.html"> каталог </a></li>
-                <li><a class="contact-item" href=""> контакты </a></li>
-            </ul>
-            <a class="bin-link" href="">Корзина
+            <div class="main-navigation-wrapper">
+                <div class="container">
+                    <ul class="list-items">
+                        <li><a class="study-item" href=""> студия </a></li>
+                        <li><a class="client-item" href=""> клиенты </a></li>
+                        <li><a class="catalog-item" href="catalog.html"> каталог </a></li>
+                        <li><a class="contact-item" href=""> контакты </a></li>
+                    </ul>
+                    <div class="bin-navigation">
+                        <a class="bin-link" href="">Корзина
              </a>
+                    </div>
+                </div>
+            </div>
 
         </nav>
     </header>
-    <main>
+    <main class="container">
         <h1 class="visually-hidden"> Нердс</h1>
         <section class="feature">
             <h2 class="visually-hidden"> Преимущества </h2>
             <ul class="services-list">
-                <li>
+                <li class="service-item">
                     <img src="img/Veb-sites.png" width="300" height="146" alt="Веб-сайты">
                     <h3 class="veb-caption"> Веб-сайты</h3>
-                    <p class="world-future-text">Мир никогда не будет прежним <br>после того как вы увидите наш сайт</p>
+                    <p class="world-future-text">Мир никогда не будет прежним<br> после того как вы увидите наш сайт!</p>
                     <a class="links-one" href=""> Заказать 
                     </a>
                 </li>
-                <li>
+                <li class="service-item">
                     <img src="img/Application.png" width="300" height="146" alt="Приложения">
                     <h2 class="Application-caption">Приложения</h2>
-                    <p class="appplay-text">Покорите топ-10 приложений в<br> AppStore и Google Play</p>
+                    <p class="appplay-text">Покорите топ-10 приложений в AppStore и Google Play</p>
                     <a class="links-two" href=""> Заказать 
                     </a>
                 </li>
-                <li>
+                <li class="service-item">
                     <img src="img/Presentation.png" width="300" height="146" alt="Презинтации">
                     <h2 class="presentation-caption">Презентации</h2>
-                    <p class="amazingli-text">Вы даже не подозреваете,<br> на сколько вы изумительны!</p>
+                    <p class="amazingli-text">Вы даже не подозреваете, на сколько вы изумительны!</p>
                     <a class="links-three" href=""> Заказать 
                     </a>
                 </li>
             </ul>
+
         </section>
         <section clas="feedback">
-            <h3 class="write-text">Напишите нам</h3>
-            <form action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                    <label class="name" for="appointment-name">Ваше имя:</label>
-                    <input class="text" id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
-                </p>
-                <p>
-                    <label class="email" for="appointment-e-mail">Ваш e-mail:</label>
-                    <input class="text-email" id="appointment-e-mail" type="email" name="e-mail" required placeholder="email@exammple.com">
-                </p>
-                <p>
-                    <label class="letter" for="appointment-text">Текст письма:</label>
-                    <input class="text-letter" id="appointment-text" type="text" name="text" placeholder="В свободной форме">
-                </p>
-                <button class="button" type="submit">Отправить</button>
-            </form>
+            <div class="write-us">
+                <h3 class="write-text">Напишите нам</h3>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                    <p>
+                        <label class="name" for="appointment-name">Ваше имя:</label>
+                        <input class="text" id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
+                    </p>
+                    <p>
+                        <label class="email" for="appointment-e-mail">Ваш e-mail:</label>
+                        <input class="text-email" id="appointment-e-mail" type="email" name="e-mail" required placeholder="email@exammple.com">
+                    </p>
+                    <p>
+                        <label class="letter" for="appointment-text">Текст письма:</label>
+                        <input class="text-letter" id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+                    </p>
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="main-footer">
-        <h2 class="friend-caption"> Давайте дружить, это выгодно!</h2>
-        <p class="discounts-text"> Скидка 10% для друзей из социальных сетей.</p>
-        <ul class="socials">
-            <li>
-                <a class="socials-icon" href="">
-                    <img src="img/vkontak.svg" width="20" height="15" alt="Вконтакте">
-                </a>
-            </li>
-            <span class="visually-hidden"> Вконтакте</span>
-            <li>
-                <a class="socials-icon" href="">
-                    <img src="img/Facebook.svg" width="12" height="22" alt="Фейсбук">
-                </a>
-            </li>
-            <span class="visually-hidden"> Фейсбук</span>
-            <li>
-                <a class="socials-icon" href="">
-                    <img src="img/Instogram.svg" width="15" height="15" alt="Инстограм">
-                </a>
-            </li>
-            <span class="visually-hidden"> Инстограм</span>
-        </ul>
+        <div class="container">
+            <h2 class="friend-caption"> Давайте дружить, это выгодно!</h2>
+            <p class="discounts-text"> Скидка 10% для друзей из социальных сетей.</p>
+            <ul class="socials">
+                <li>
+                    <a class="socials-icon" href="">
+                        <img src="img/vkontakt.svg" width="20" height="15" alt="Вконтакте">
+                    </a>
+                </li>
+                <span class="visually-hidden"> Вконтакте</span>
+                <li>
+                    <a class="socials-icon" href="">
+                        <img src="img/Facebook.svg" width="12" height="22" alt="Фейсбук">
+                    </a>
+                </li>
+                <span class="visually-hidden"> Фейсбук</span>
+                <li>
+                    <a class="socials-icon" href="">
+                        <img src="img/Instogram.svg" width="15" height="15" alt="Инстограм">
+                    </a>
+                </li>
+                <span class="visually-hidden"> Инстограм</span>
+            </ul>
+        </div>
     </footer>
 </body>
 
